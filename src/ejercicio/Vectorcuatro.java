@@ -82,9 +82,9 @@ public class Vectorcuatro extends javax.swing.JFrame {
         txtResultado.setRows(5);
         jScrollPane1.setViewportView(txtResultado);
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 190, 140));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 200, 150));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 230, 190));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 240, 200));
 
         jPanel4.setBackground(new java.awt.Color(249, 232, 249));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Opciones:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Comic Sans MS", 1, 14), new java.awt.Color(102, 0, 102))); // NOI18N
@@ -182,7 +182,7 @@ public class Vectorcuatro extends javax.swing.JFrame {
     private void cmdLlenarManActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManActionPerformed
        double n;
         for (int i = 0; i < v.length; i++) {
-           n=Double.parseDouble(JOptionPane.showInputDialog("Digite el elemento en la posicion"+i));
+           n=Double.parseDouble(JOptionPane.showInputDialog("Digite el elemento en la posicion" +i));
            v [i]=n;
         }
     }//GEN-LAST:event_cmdLlenarManActionPerformed
@@ -190,10 +190,10 @@ public class Vectorcuatro extends javax.swing.JFrame {
     private void cmdLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarAutoActionPerformed
          double n,n1;
          
-         n1=Double.parseDouble(JOptionPane.showInputDialog(this, "Digite un numero hasta donde quiere el llenado:"));
+         n1=Double.parseDouble(JOptionPane.showInputDialog(this, "Digite un numero hasta donde quiere el llenado: " ));
          while (n1<v.length){
              JOptionPane.showMessageDialog(this,"Digite un numero mayor a: "+v.length);
-             n1=Double.parseDouble(JOptionPane.showInputDialog(this,"Digite el numero hasta donde quiere el llenado"));
+             n1=Double.parseDouble(JOptionPane.showInputDialog(this,"Digite el numero hasta donde quiere el llenado " ));
          }
         for (int i = 0; i <v.length; i++) {
             n=(int)(Math.random()* + 1);
@@ -245,7 +245,7 @@ public class Vectorcuatro extends javax.swing.JFrame {
                 c=c1;
             }
         }
-        txtResultado.setText("El numero que mas se repite es: "+n2);
+        txtResultado.setText("El numero que mas se repite es: " +n2);
     }//GEN-LAST:event_cmdRepActionPerformed
 
     /**
